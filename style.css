@@ -15,13 +15,20 @@ p.lead {
 
 /////////////////
 
-#Nicole {
+.Nicole {
   text-align: center;
-  color: white;
+  /* color: white; */
   background-color: white;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
-#aboutme {
-  background-image: url("stars.gif");
+
+#description {
+  /* background-color: white; */
+}
+.aboutme {
+  background-color: lightgreen;
   font-family: Georgia;
   margin: 0;
 }
@@ -80,9 +87,20 @@ img {
   -webkit-user-select: none;
 }
 
+.format_pic {
+  /* padding-left: 15px; */
+  /* padding-right: 100px; */
+  /* right: 250px; */
+  /* padding-top: 65px; */
+  transform: rotate(270deg);
+}
+
+.prev {
+  left: 250px;
+}
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 250px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -129,4 +147,14 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.aboutme_button {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* right: 100px; */
+  width: 100%;
+  /* margin: 150px; */
+  margin-right: 300px;
 }
