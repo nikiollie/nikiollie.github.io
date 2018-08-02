@@ -35,13 +35,10 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="https://nikiollie.github.io/contact">Contact</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
           </div>
      </nav>
 
@@ -49,18 +46,22 @@
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">Hackathons</h4>
     </div>
-    <!-- <img src="stuff.jpg" alt="HTML5 Icon"> -->
-<h5>Click to see my <a href="https://portfolium.com/nicole-martindale/portfolio">portfolium!</a></h5>
+
+
+<h5>Click<a href="https://portfolium.com/nicole-martindale/portfolio" target="_blank"> here</a> to see my portfolium!</h5>
 <hr>
 
 
 
-
-
         <!-- Trigger/Open First Modal -->
-        <center><button id="myBtn">2018 H.A.R.D. Hacks (UCSD)</button></center>
+        <center><img id="myImg" src="hardhacks1.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:100%;max-width:500px"></center>
+
+        <!-- <center><button id="myBtn">2018 H.A.R.D. Hacks (UCSD)</button></center> -->
         <hr>
-        <center><button id="second_Btn">2018 HackXX (UCSD)</button></center>
+        <!-- <center><button id="second_Btn">2018 HackXX (UCSD)</button></center> -->
+        <center><img id="myImg2" src="hackxx1.png" alt="2018 HackXX (UCSD)" style="width:100%;max-width:500px"></center>
+
+
 
         <!-- First Modal -->
         <div id="myModal" class="modal">
@@ -76,7 +77,10 @@
                 keyword was heard. Could help the hearing-impaired community. My role on the team was as
                 a lead programmer. I programmed the Qualcomm DragonBoard and integrated the Python API
                 for voice recognition.</p>
-
+                <center><div>
+                <img src="hardhacks2.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+                <img src="hardhacks3.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+              </div></center>
             </div>
             <!-- <div class="modal-footer">
               <h3>Modal Footer</h3>
@@ -97,6 +101,7 @@
                 allowing students to buy and sell each other's items. Used Swift and XCode to compete
                 in the 24 hour hackathon with two other team members. My role on the team was as a
                 back-end programmer (Swift) and designer (designing the format of the app on XCode).</p>
+                <p>Click <a href="https://github.com/DarMoNic/ShoppingCenter-UCSD" target="_blank">here</a> to go the Github repository</p>
             </div>
             <!-- <div class="modal-footer">
               <h3>Modal Footer</h3>
@@ -110,17 +115,18 @@
       var modal = document.getElementById('myModal');
       var modal2 = document.getElementById('second_Modal');
       // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-      var btn2 = document.getElementById("second_Btn");
+      var img = document.getElementById("myImg");
+      var img2 = document.getElementById("myImg2");
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
       var span2 = document.getElementsByClassName("close")[1];
 
       // When the user clicks the button, open the modal
-      btn.onclick = function() {
+      img.onclick = function() {
           modal.style.display = "block";
+          captionText.innerHTML = this.alt;
       }
-      btn2.onclick = function() {
+      img2.onclick = function() {
           modal2.style.display = "block";
       }
 

@@ -47,12 +47,12 @@ p.lead {
     width: 50%;
 }
 
-img {
-  /*vertical-align: middle;*/
-  display: block;
+/* img { */
+  /* vertical-align: middle;  */
+  /* display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -236,17 +236,16 @@ img {
     background-color: #5cb85c;
     color: white;
 }
-#myBtn {
-  background-color: #e7e7e7; color: black;
-  font-family: "Times New Roman", Times, serif;
-}
-#myBtn:hover {
+#myImg {
   border-radius: 8px;
-  background-color: #008CBA;
   cursor: pointer;
+  transition: 0.2s;
+}
+#myImg:hover {
+opacity: 0.7;
 }
 
-#second_Btn {
+/* #second_Btn {
   background-color: #e7e7e7; color: black;
   font-family: "Times New Roman", Times, serif;
 }
@@ -254,4 +253,17 @@ img {
   border-radius: 8px;
 background-color: #f44336;
   cursor: pointer;
+} */
+
+#myImg2 {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#myImg2:hover {
+opacity: 0.7;
+}
+
+#contact_me {
+  margin-top: 200px;
 }

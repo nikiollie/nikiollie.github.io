@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+<title>Other Projects </title>
   </head>
   <body>
         <!-- Nav Bar -->
@@ -29,19 +29,16 @@
               <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Hackathons</a>
+                  <a class="dropdown-item" href="https://nikiollie.github.io/hackathons">Hackathons</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Other</a>
+                  <a class="dropdown-item" href="https://nikiollie.github.io/projects">Other</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="https://nikiollie.github.io/contact">Contact</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
           </div>
      </nav>
 
@@ -49,11 +46,97 @@
     <div class="alert alert-success" role="alert">
       <h4 class="alert-heading">Other</h4>
     </div>
-    <!-- <img src="stuff.jpg" alt="HTML5 Icon"> -->
+
+    <h5>Click<a href="https://portfolium.com/nicole-martindale/portfolio" target="_blank"> here</a> to see my portfolium!</h5>
+    <hr>
+
+    <!-- Trigger/Open First Modal -->
+    <center><img id="myImg" src="spis1.png" alt="2017 SPIS Final Project (UCSD)" style="width:100%;max-width:500px"></center>
+
+    <hr>
+    <center><img id="myImg2" src="gwc1.png" alt="2015 Girls Who Code Final Project" style="width:100%;max-width:500px"></center>
 
 
-      <!-- Optional JavaScript -->
-    
+
+    <!-- First Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>2017 SPIS Final Project (UCSD)</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>Student Participant in the 2017 Summer Program for Incoming Students at UCSD</p>
+          <p>Built a “greeter robot” using Python, Raspberry Pi3, servos, ultrasound sensor. Programmed it
+            to recognize reflective tape and autonomously follow it, then relay a previously recorded
+             message and “wave” using a foam hand connected to a servo</p>
+             <p>Click <a href="https://youtu.be/0_QMpUr4y7c" target="_blank">here</a> to see a video demo</p>
+            <center> <img src="spis2.jpg" alt="2017 SPIS Final Project (UCSD)" style="width:45%"></center>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="second_Modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>2015 Girls Who Code Final Project</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p>Created an app using JavaScript, HTML, and CSS where the player had to drag a
+            piece of trash to the recycle bin or the trash can and receive points for the correct response</p>
+            <p>Click <a href="https://youtu.be/DipJH5u-8Lw" target="_blank">here</a> to see a video demo</p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  var modal2 = document.getElementById('second_Modal');
+  // Get the button that opens the modal
+  var img = document.getElementById("myImg");
+  var img2 = document.getElementById("myImg2");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  var span2 = document.getElementsByClassName("close")[1];
+
+  // When the user clicks the button, open the modal
+  img.onclick = function() {
+      modal.style.display = "block";
+      captionText.innerHTML = this.alt;
+  }
+  img2.onclick = function() {
+      modal2.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  span2.onclick = function() {
+      modal2.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      if (event.target == modal2) {
+          modal2.style.display = "none";
+      }
+  }
+  </script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
