@@ -1,0 +1,299 @@
+
+@font-face {
+  font-family: Nexa;
+  src: url("Nexa/NexaLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nexa-Bold;
+  src: url("Nexa/NexaBold.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+font-family: Nexa;
+background-color: #E0FFFF;
+color: #3B3B3B;
+display: flex;
+flex-direction: column;
+}
+
+.emoji-row {
+  align-items: center;
+  font-size: 40px;
+}
+
+
+.nicole {
+  flex: 1 0 auto;
+  text-align: center;
+  position: relative;
+  /* color: white; */
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+
+  margin-bottom: 150px; 
+}
+
+.contact {
+  width: 25px;
+  border-radius: 8px;
+}
+
+.resume {
+  width: 25px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.github {
+  width: 30px;
+  border-radius: 8px;
+}
+
+#view-proj {
+  background-color: white;
+  background-repeat:no-repeat;
+  border: 1px solid darkslategray;
+  font-family: Nexa;
+  padding: 5px;
+  box-shadow: 2px 2px;
+  cursor:pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#view-proj:hover {
+  background-color: #000;
+  color: green;
+  border-color: transparent;
+}
+
+.regular {
+  font-family: Nexa;
+}
+  
+.bold {
+  font-family: Nexa-Bold;
+}
+
+/* when user highlights something */
+::selection {
+  background: #6495ED;
+}
+
+.section1 {
+  width:350px;
+  font-size: 20px;
+  border-color: transparent;
+  text-align: left;
+  /* word-break: break-all; */
+  float: left;
+  border-width:1px;
+  word-wrap: break-word;
+}
+
+.section2 {
+  width:350px;
+  font-size: 20px;
+  border-color: transparent;
+  text-align: left;
+  padding-top: 45px;
+  /* word-break: break-all; */
+  float: right;
+  border-width:1px;
+  word-wrap: break-word;
+}
+
+footer {
+  border-top: 1px solid #b40a0a6b;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(68, 185, 185);
+}
+
+.nav-bar {
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+.nav-bar a{
+  color: #3B3B3B !important;
+}
+
+.nav-bar a.current {
+  text-decoration: underline;
+}
+
+.bottom-margin {
+  margin-bottom: 150px;
+}
+
+.column {
+  align-items: center;
+  width:700px;
+  font-size: 20px;
+  border-color: transparent;
+  text-align: left;
+  float: left;
+  border-width:1px;
+  word-wrap: break-word;
+
+  position: relative;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+h1.display-4 {
+   text-align: center;
+}
+
+p.lead {
+  text-align: center;
+  }
+
+
+
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+  margin-left: auto;
+    color: white;
+    /* float: right; */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    margin-right: auto;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  /* text-align: left; */
+  margin-right: auto;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+#myImg {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#myImg:hover {
+opacity: 0.7;
+}
+
+#myImg2 {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#myImg2:hover {
+opacity: 0.7;
+}
+
+#gasImg {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#gasImg:hover {
+opacity: 0.7;
+}
+
+#img {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#img:hover {
+opacity: 0.7;
+}
+
+#img2 {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#img2:hover {
+opacity: 0.7;
+}
+
+

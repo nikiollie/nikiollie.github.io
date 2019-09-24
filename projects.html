@@ -1,70 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-<title>Other Projects </title>
+    <meta charset="UTF-8">
+    <title>Projects </title>
+    <link rel="icon" href="assets/img/avocado.PNG">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-        <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <!-- <span class="navbar-brand mb-0 h1" href="#">Nicole</span>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
+      <nav class="bold">
+        <span class="nav-bar">
+          <a href="index.html">Home</a>
+        </span>
+        <span class="nav-bar">
+          <a href="experience.html">Experience</a>
+        </span>
+        <span class="nav-bar">
+          <a href="projects.html" class="current">Projects</a>
+        </span>
+        <span class="nav-bar">
+            <a href="Nicole_Martindale_Resume.pdf" target="_blank"><img src="assets/img/resume.svg" class="resume" alt="Resume"></a>
+        </span>
+      </nav> 
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="https://nikiollie.github.io">Home</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="https://nikiollie.github.io/aboutme">About Me<span class="sr-only">(current)</span></a>
-              </li> -->
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="https://nikiollie.github.io/hackathons">Hackathons</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https://nikiollie.github.io/projects">Other</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://nikiollie.github.io/contact">Contact</a>
-              </li>
-            </ul>
 
-          </div>
-     </nav>
+    <center>
+    <h4>Click<a href="https://portfolium.com/nicole-martindale/portfolio" target="_blank"> here</a> to see my portfolium!</h4>
+    </center>
+    <hr>
 
-    <!-- Welcome! -->
-    <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Other</h4>
+    <div class="bottom-margin">
+    <div class="emoji-row">
+      <center>
+        <img id="gasImg" src="assets/img/gasup.PNG" alt="GasUp CSE 110 Project (UCSD)" style="width:100%;max-width:250px">
+        <img id="img2" src="assets/img/hackxx1.png" alt="2018 HackXX (UCSD)" style="width:50%;max-width:150px">
+        <img id="img" src="assets/img/hardhacks1.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:100%;max-width:200px">
+        <br>
+        <img id="myImg" src="assets/img/spis1.PNG" alt="2017 SPIS Final Project (UCSD)" style="width:100%;max-width:250px">
+        <img id="myImg2" src="assets/img/gwc1.png" alt="2015 Girls Who Code Final Project" style="width:100%;max-width:400px">
+      </center>
+    </div>
     </div>
 
-    <h5>Click<a href="https://portfolium.com/nicole-martindale/portfolio" target="_blank"> here</a> to see my portfolium!</h5>
-    <hr>
+    <!-- GasUp Modal -->
+    <div id="gas_Modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>2019 GasUp Application</h2>
+            <div class="close">&times;</div>
+          </div>
+          <div class="modal-body">
+            <p>Built a React Native mobile app which takes into account distance, current amount of gas, cost, gas station preference, and car type in order to select the most cost-efficient gas station</p>
+            <p>Used React Native, Firebase, Flask, Selenium, and AWS EC2 to develop this app</p>
+              <p>Click <a href="https://www.youtube.com/watch?v=NFDYxfXb_50" target="_blank">here</a> to see a video demo</p>
+          </div>
+  
+        </div>
+      </div>
 
-    <!-- Trigger/Open First Modal -->
-    <center><img id="myImg" src="spis1.PNG" alt="2017 SPIS Final Project (UCSD)" style="width:100%;max-width:500px"></center>
-
-    <hr>
-    <center><img id="myImg2" src="gwc1.png" alt="2015 Girls Who Code Final Project" style="padding-bottom: 50px;width:100%;max-width:500px"></center>
-
-
-
-    <!-- First Modal -->
     <div id="myModal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <h2>2017 SPIS Final Project (UCSD)</h2>
-          <span class="close">&times;</span>
+          <div class="close">&times;</div>
         </div>
         <div class="modal-body">
           <p>Student Participant in the 2017 Summer Program for Incoming Students at UCSD</p>
@@ -72,18 +68,16 @@
             to recognize reflective tape and autonomously follow it, then relay a previously recorded
              message and “wave” using a foam hand connected to a servo</p>
              <p>Click <a href="https://youtu.be/0_QMpUr4y7c" target="_blank">here</a> to see a video demo</p>
-            <center> <img src="spis2.JPG" alt="2017 SPIS Final Project (UCSD)" style="width:45%"></center>
+            <center> <img src="assets/img/spis2.JPG" alt="2017 SPIS Final Project (UCSD)" style="width:15%"></center>
         </div>
       </div>
     </div>
 
-    <!-- Second Modal -->
     <div id="second_Modal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <h2>2015 Girls Who Code Final Project</h2>
-          <span class="close">&times;</span>
+          <div class="close">&times;</div>
         </div>
         <div class="modal-body">
           <p>Created an app using JavaScript, HTML, and CSS where the player had to drag a
@@ -95,51 +89,58 @@
     </div>
 
 
+    
+     <div id="modal1" class="modal">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h2>2018 H.A.R.D. Hacks (UCSD)</h2>
+           <div class="close">&times;</div>
+         </div>
+         <div class="modal-body">
+           <p>Programmed a Qualcomm DragonBoard 410c with Arduino, Audio Mezzanine Board and motor.
+             Used the Python Snowboy API for voice recognition, the motor would vibrate when the
+             keyword was heard. Could help the hearing-impaired community. My role on the team was as
+             a lead programmer. I programmed the Qualcomm DragonBoard and integrated the Python API
+             for voice recognition.</p>
+             <center><div>
+             <img src="assets/img/hardhacks2.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+             <img src="assets/img/hardhacks3.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+           </div></center>
+         </div>
 
-  <!-- Optional JavaScript -->
-  <script>
-  // Get the modal
-  var modal = document.getElementById('myModal');
-  var modal2 = document.getElementById('second_Modal');
-  // Get the button that opens the modal
-  var img = document.getElementById("myImg");
-  var img2 = document.getElementById("myImg2");
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  var span2 = document.getElementsByClassName("close")[1];
+       </div>
+     </div>
 
-  // When the user clicks the button, open the modal
-  img.onclick = function() {
-      modal.style.display = "block";
-      captionText.innerHTML = this.alt;
-  }
-  img2.onclick = function() {
-      modal2.style.display = "block";
-  }
+     <div id="modal2" class="modal">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h2>2018 HackXX (UCSD)</h2>
+           <div class="close">&times;</div>
+         </div>
+         <div class="modal-body">
+           <p>Built an iOS app called ShoppingCenter@UCSD which acts as an online marketplace
+             allowing students to buy and sell each other's items. Used Swift and XCode to compete
+             in the 24 hour hackathon with two other team members. My role on the team was as a
+             back-end programmer (Swift) and designer (designing the format of the app on XCode).</p>
+             <p>Click <a href="https://github.com/DarMoNic/ShoppingCenter-UCSD" target="_blank">here</a> to go the Github repository</p>
+         </div>
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
-  span2.onclick = function() {
-      modal2.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-      if (event.target == modal2) {
-          modal2.style.display = "none";
-      }
-  }
-  </script>
+       </div>
+     </div>
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+     <script src="assets/js/modal.js"></script>
+
+    <footer class="footer">
+        <p class="bold">#connect</p>
+        <p>nmartind [at] ucsd [dot] com</p>
+        <p> nicoleamartindale [at] yahoo [dot] com</p>
+        <a href="https://www.linkedin.com/in/nicole-martindale/" target="_blank"><img src="assets/img/linkedin.png" class="contact" alt="Linkedin"></a>
+        <a href="http://www.github.com/nikiollie" target="_blank"><img src="assets/img/github.png" class="github" alt="Github"></a>
+        <a href="mailto:nmartind@ucsd.edu" target="_blank"><img src="assets/img/email.png" class="contact" alt="Email"></a>
+        <a href="https://open.spotify.com/user/nikiollie?si=PyUOEsa9QdWsOMkaATihRg" target="_blank"><img src="assets/img/spotify.png" class="contact" alt="Spotify"</a>
+    </footer>
+
   </body>
 </html>
