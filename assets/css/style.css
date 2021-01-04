@@ -15,7 +15,8 @@ html, body {
 
 body {
 font-family: Nexa;
-background-color: #E0FFFF;
+background-image: url("../img/blue.jpg");
+/* background-color: #E0FFFF; */
 color: #3B3B3B;
 display: flex;
 flex-direction: column;
