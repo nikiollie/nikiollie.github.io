@@ -15,9 +15,9 @@ html, body {
 
 body {
 font-family: Nexa;
-background-image: url("../img/dark_blue.jpg");
-/* background-color: #E0FFFF; */
-color: #66FCF1;
+/* background-image: url("../img/code.jpg"); */
+background-color: #E0FFFF;
+color: #3B3B3B;
 display: flex;
 flex-direction: column;
 }
