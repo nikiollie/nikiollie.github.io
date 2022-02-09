@@ -252,6 +252,15 @@ p.lead {
 }
 
 
+#homepetImg {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#homepetImg:hover {
+opacity: 0.7;
+}
+
 #myImg {
   border-radius: 8px;
   cursor: pointer;
