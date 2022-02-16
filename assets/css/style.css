@@ -9,6 +9,10 @@
   src: url("Nexa/NexaBold.otf") format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
 }
@@ -16,15 +20,19 @@ html, body {
 body {
 font-family: Nexa;
 /* background-image: url("../img/code.jpg"); */
-background-color: #E0FFFF;
+background-color: white;
 color: #3B3B3B;
 display: flex;
 flex-direction: column;
 }
 
-.emoji-row {
+.aligned-row {
   align-items: center;
-  font-size: 40px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: space-between; */
+  /* font-size: 40px; */
 }
 
 
@@ -38,7 +46,7 @@ flex-direction: column;
   margin-right: auto;
   font-size: 24px;
 
-  margin-bottom: 150px; 
+  /* margin-bottom: 150px;  */
 }
 
 .contact {
@@ -57,7 +65,7 @@ flex-direction: column;
   border-radius: 8px;
 }
 
-#view-proj {
+#view_about {
   background-color: white;
   background-repeat:no-repeat;
   border: 1px solid darkslategray;
@@ -69,9 +77,9 @@ flex-direction: column;
   border-radius: 8px;
 }
 
-#view-proj:hover {
+#view_about:hover {
   background-color: #000;
-  color: green;
+  color: rgb(68, 185, 185);
   border-color: transparent;
 }
 
@@ -104,15 +112,23 @@ flex-direction: column;
   font-size: 20px;
   border-color: transparent;
   text-align: left;
-  padding-top: 45px;
+  padding-top: 40px;
+  padding-left: 10px;
   /* word-break: break-all; */
   float: right;
   border-width:1px;
   word-wrap: break-word;
 }
 
+.box {
+  display: flex;
+  align-items:center;
+  padding-left: 100px;
+  /* padding-right: 50px; */
+}
+
 footer {
-  border-top: 1px solid #b40a0a6b;
+  border-top: 1px solid rgb(68, 185, 185);
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -127,9 +143,17 @@ a {
   color: rgb(68, 185, 185);
 }
 
+.nav-bar-section {
+  padding: 10px;
+  position: fixed;
+  border-bottom: 1px solid rgb(68, 185, 185);
+  background-color: white;
+}
+
 .nav-bar {
-  padding: 20px;
-  background-color: #fefefe;
+  padding: 10px;
+  border-bottom: 1px solid rgb(68, 185, 185);
+  background-color: white;
 }
 
 .nav-bar a{
@@ -138,6 +162,33 @@ a {
 
 .nav-bar a.current {
   text-decoration: underline;
+}
+
+.sections {
+  padding: 50px 5px; 
+  z-index: 1500;
+  flex: 1 0 auto;
+  text-align: center;
+  position:fixed;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  margin-top: 145px; 
+}
+
+.even_section {
+  background-color: rgb(172, 228, 228);
+
+}
+
+.odd_section {
+  background-color: white;
+}
+
+.section-title {
+  font-family: Nexa-Bold;
+  font-size: 20px;
 }
 
 .bottom-margin {
@@ -163,18 +214,14 @@ a {
   margin-bottom: 50px;
 }
 
+
 h1.display-4 {
    text-align: center;
 }
 
 p.lead {
   text-align: center;
-  }
-
-
-
-
-
+}
 
 
 .modal {
@@ -189,6 +236,7 @@ p.lead {
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
+    color: black;
 }
 
 
@@ -198,7 +246,7 @@ p.lead {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -219,11 +267,12 @@ p.lead {
 
 
 .close {
-  margin-left: auto;
+  margin-right: auto;
     color: white;
-    /* float: right; */
+    float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .close:hover,
@@ -235,75 +284,35 @@ p.lead {
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    margin-right: auto;
+  font-family: Nexa;
+  padding: 0px 16px;
+  background-color: white;
+  color: black;
+  margin-right: auto;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  font-family: Nexa;
+  padding: 0px 16px;
+}
 
 .modal-footer {
   /* text-align: left; */
   margin-right: auto;
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+  padding: 2px 16px;
+  background-color: white;
+  color: black;
 }
 
-
-#homepetImg {
+.project-image {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
 }
-#homepetImg:hover {
-opacity: 0.7;
+
+.project-image:hover {
+  opacity: 0.7;
 }
 
-#myImg {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#myImg:hover {
-opacity: 0.7;
-}
-
-#myImg2 {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#myImg2:hover {
-opacity: 0.7;
-}
-
-#gasImg {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#gasImg:hover {
-opacity: 0.7;
-}
-
-#img {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#img:hover {
-opacity: 0.7;
-}
-
-#img2 {
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#img2:hover {
-opacity: 0.7;
-}
 
 

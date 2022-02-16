@@ -1,86 +1,404 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nicole Martindale</title>
+        <link rel="icon" href="assets/img/bird.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
 
-  <head>
-    <meta charset="UTF-8">
-    <title> Nicole Martindale </title>
-    <link rel="icon" href="assets/img/avocado.png">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/fbf9c64d2d.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-   
-    <nav class="bold">
-      <span class="nav-bar">
-        <a href="index.html" class="current">Home</a>
-      </span>
-      <span class="nav-bar">
-        <a href="experience.html">Experience</a>
-      </span>
-      <span class="nav-bar">
-        <a href="projects.html">Projects</a>
-      </span>
-      <span class="nav-bar">
-          <a href="Nicole_Martindale_Resume.pdf" target="_blank"><img src="assets/img/resume.svg" class="resume" alt="Resume"></a>
-      </span>
+    <nav class="bold nav-bar-section">
+        <span class="nav-bar">
+            <a href="index.html" class="current">Home</a>
+        </span>
+        <span class="nav-bar">
+            <a href="about.html">About</a>
+        </span>
     </nav>
 
+    <div class="sections bold">
+        <h4><a href="#internships">Internships</a></h4>
+        <h4><a href="#research">Research</a></h4>
+        <h4><a href="#teaching">Teaching</a></h4>
+        <h4><a href="#projects">Projects</a></h4>
+        <h4><a href="#connect">Connect</a></h4>
+    </div>
 
     <div class="nicole">
-      <h1>Nicole Martindale</h1>
-      <p>Currently pursuing an M.S. in <span class="bold">Computer Science</span> at the University of California, San Diego</p>
-      <a href="projects.html"><button id="view-proj">VIEW PROJECTS 🤖</button></a>
+        <h1>Nicole Martindale</h1>
+        <p>Currently pursuing an M.S. in <span class="bold">Computer Science</span> at the University of California, San Diego</p>
+        <a href="about.html"><input id="view_about" type="button" value='Learn more about me!'></a>
+    </div>
+    <hr>
+    
+    <section id="internships" class="even_section">
+        <center>
+        <p class="section-title">Internships</p>
+        <div class="bold aligned-row">
+                <figure>
+                    <img class="project-image" src="assets/img/twitter.jpg" alt="Twitter" style="width:100%;max-width:300px">
+                    <figcaption>🐦Twitter, Summer 2021</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/qualcomm1.jpg" alt="Qualcomm" style="width:100%;max-width:300px">
+                    <figcaption>👩‍💻Qualcomm, Summer 2020</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/qualcomm2.jpg" alt="Qualcomm" style="width:100%;max-width:300px">
+                    <figcaption>🔊Qualcomm, Summer 2019</figcaption>
+                </figure>
+        </div>
+        </center>
+    </section>
 
-      <br>
-      <br>
-      <div class="section1">
-        <p class="bold">About Me</p>
-        <p>
-          I am a first year Master's student in the Computer Science department 
-          <a href="https://www.ucsd.edu" target="_blank" class="bold">@UCSD</a>. 
-          In Summer 2021, I worked at <a href="https://www/twitter.com" target="_blank" class="bold">Twitter</a> 
-          as an engineering intern on the Ads Measurement Platform team.
-          I have previously worked at <a href="https://www.qualcomm.com" target="_blank" class="bold">Qualcomm</a> 
-          as a SWE intern on the Connectivity/Stability team and 
-          the Audio Processing team. Throughout my undergraduate program at UCSD, 
-          I was a computer science tutor for several classes including 
-          <a href="http://ieng6.ucsd.edu/~cs12x/" target="_blank" class="bold">CSE 12</a> - 
-          Data Structures and <a href="http://ieng6.ucsd.edu/~cs110x/" target="_blank" class="bold">CSE 110</a> - 
-          Software Engineering. I was also a head tutor for 
-          <a href="http://ieng6.ucsd.edu/~cs15x/" target="_blank" class="bold">CSE 15L</a> - 
-          Software Tools.
-            
-        </p>
-      </div>
-      
-      <div class="section2">
-        <!-- <p class="bold" style="text-align: left">Other Interests</p> -->
-        <p>
-                  I am extremely passionate about increasing diversity in STEM, especially in CS. 
-                  Throughout my undergraduate and graduate experience, I have been involved in 
-                  the <a href="https://cse.ucsd.edu/diversity_equity_inclusion" target="_blank" class="bold">
-                  CSE Diversity, Equity, and Inclusion (DEI) Community</a>, and am currently a 
-                  graduate student lead. 
-                  <br><br>
-                  In my undergrad, I was involved in research with the 
-                  UCSD <a href="https://knightlab.ucsd.edu/" target="_blank" class="bold">Knight Lab</a> 
-                  and the <a href="https://mdavidson.org/" target="_blank" class="bold">Davidson Lab</a>. 
-  
-        </p>
-      </div>
+    
+    <!-- Twitter Modal -->
+    <div id="twitter" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Twitter</h2>
+                    <h4>Software Engineering Intern, Summer 2021</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Worked as an Engineering Intern on the Ads Measurement Platform team.
+                        Modified and deprecated several endpoints from internal backend 
+                        services for Brand Surveys.
+                        Improved overall system design, eased on-call load, increased UI 
+                        performance and helped latency, and reduced maintenance cost and 
+                        redundancy of internal system.
+                    </p>
+                    <h5>Scala, Apache Thrift, IntelliJ</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2020 Qualcomm Modal -->
+    <div id="qualcomm2020" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Qualcomm</h2>
+                    <h4>Software Engineering Intern, Summer 2020</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Worked as a Software Engineering Intern on the Connectivity/Stability team. 
+                        Designed and developed a web UI with a WSGI server to run Python scripts for analyzing crashes and 
+                        generating/viewing reports on Connectivity and Stability JIRA 
+                        issues [WiFi, BlueTooth, FM].
+                    </p>
+                    <h5>Javascript, HTML, CSS, Bootstrap, Python, Flask</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2019 Qualcomm Modal -->
+    <div id="qualcomm2019" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Qualcomm</h2>
+                    <h4>Software Engineering Intern, Summer 2019</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Worked as a Software Engineering Intern with the Audio Processing team.  
+                        Implemented C# based parser to decrypt binary packets of information 
+                        presented in bin files. Developed UI to display parsed info in a 
+                        sequence diagram and tree view form.
+                    </p>
+                    <h5>C#, Visual Studio</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="research" class="odd_section">
+        <center>
+        <p class="section-title">Research</p>
+        <div class="bold aligned-row">
+                <figure>
+                    <img class="project-image" src="assets/img/davidson.jpg" alt="Davidson" style="width:100%;max-width:300px">
+                    <figcaption>⚡Davidson Lab, Sept 2020 - Dec 2020</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/knight18.png" alt="Knight" style="width:100%;max-width:300px">
+                    <figcaption>🧬Knight Lab, Sept 2018 - June 2019</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/knight19.jpeg" alt="Knight" style="width:100%;max-width:300px">
+                    <figcaption>🧪Knight Lab, Sept 2019 - June 2020</figcaption>
+                </figure>
+        </div>
+        </center>
+    </section>
+
+    <!-- Davidson Modal -->
+    <div id="davidson" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Davidson Lab</h2>
+                    <h4>Undergraduate Researcher, Sept 2020 - Dec 2020</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Worked on developing python package ("geodata") to streamline the 
+                        manipulation of renewable energy resource profiles and land use 
+                        datasets using Python, Jupyter Notebook, and several Python libraries 
+                        including geopandas and geoplot. Collected land use layers and other 
+                        energy datasets in order to find the most suitable regions in 
+                        India towards the development of renewable energy plants 
+                        specifically wind/solar such that it's politically suitable and 
+                        financially viable, and to what extent does building renewables 
+                        in these regions influence wind and solar potential and the cost 
+                        premiums to efficiency associated with these changes.
+                    </p>
+                    <h5>Python, Jupyter Notebook</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Knight Lab 2018-19 Modal -->
+    <div id="knight18" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Knight Lab</h2>
+                    <h4>Undergraduate Researcher, Sept 2018 - June 2019</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Characterized metagenomic sequence data through the development of 
+                        convolutional neural networks using Python and TensorFlow in order to 
+                        improve the overall speed of microorganism identification, since 
+                        microbiome research has shown promise in diagnosing illnesses from 
+                        the composition of a patient's microbiome. Experimented with CNN 
+                        architectures using different numbers of convolutional layers, 
+                        pooling layers, and varying filter sizes to determine the most 
+                        accurate model.
+                    </p>
+                    <h5>Python, TensorFlow, Jupyter Notebook</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Knight Lab 2019-20 Modal -->
+    <div id="knight19" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Knight Lab</h2>
+                    <h4>Undergraduate Researcher, Sept 2019 - June 2020</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Continued research to simulate and classify DNA sequences. Trained 
+                        word embedding models, simulated DNA sequence reads, and aligned query 
+                        sequences. Worked with dna2vec, a library based on word2vec and developed 
+                        my own configuration files to train different models on several types of 
+                        archaea and bacteria. Along with dna2vec, also worked with wgsim to 
+                        simulate sequence reads from reference genomes, and blastn and bwa for 
+                        query sequence alignment.
+                    </p>
+                    <h5>Python, Jupyter Notebook</h5>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <section id="teaching" class="even_section">
+        <center>
+        <p class="section-title">Teaching</p>
+        <div class="bold aligned-row">
+                <figure>
+                    <img class="project-image" src="assets/img/cse.png" alt="Tutoring" style="width:100%;max-width:200px">
+                    <figcaption>💻UCSD CSE Tutoring, Sept 2018 - June 2021</figcaption>
+                </figure>
+        </div>
+        </center>
+    </section>
+
+    <!-- CSE Tutoring Modal -->
+    <div id="tutoring" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>UCSD Computer Science & Eng Dept</h2>
+                    <h4>CSE Tutor, Sept 2018 - June 2021</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Tutor for CSE 12 (Data Structures), 
+                        15L (Software Tools & Techniques Lab), 110 (Software Engineering).
+                        Graded exams and course assignments, held office hours to assist 
+                        students who needed help with course material and assignments, 
+                        proctored examinations and staffed CSE 15L labs.
+                    </p>
+                    <h5>Unix, Git, Makefiles, Shell Scripting</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <section id="projects" class="odd_section">
+        <div class="bottom-margin">
+            <div class="aligned-row">
+            <center>
+                <p class="section-title">Projects</p>
+                <img class="project-image" src="assets/img/homeapet1.png" alt="Home a Pet" style="width:100%;max-width:400px">
+                <img class="project-image" src="assets/img/gasup.PNG" alt="GasUp" style="width:100%;max-width:250px">
+                <img class="project-image" src="assets/img/hackxx1.png" alt="2018 HackXX (UCSD)" style="width:50%;max-width:150px">
+                <br>
+                <img class="project-image" src="assets/img/hardhacks1.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:100%;max-width:200px">
+                <img class="project-image" src="assets/img/spis1.PNG" alt="2017 SPIS Final Project (UCSD)" style="width:100%;max-width:250px">
+                <img class="project-image" src="assets/img/gwc1.png" alt="2015 Girls Who Code Final Project" style="width:100%;max-width:400px">
+            </center>
+            </div>
+        </div>
+        
+        <!-- Home A Pet Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>Home A Pet</h2>
+                <h4>2021</h4>
+            </div>
+            <div class="modal-body">
+                <p>Built a React web app that takes into account user preferences on type of pet, distance, zipcode, and preferred gender, age, and size 
+                and returns a list of resulting pets from nearby shelters and adoption agencies that match the user's criteria</p>
+                <h5>ReactJS, Flask, Python, MongoDB</h5>
+                <center>
+                <div>
+                    <img src="assets/img/homeapet3.png" alt="Home a Pet" style="width:75%">
+                </div>
+                </center>
+            </div>
+            </div>
+        </div>
+
+        <!-- GasUp Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>GasUp Application</h2>
+                <h4>2019</h4>
+            </div>
+            <div class="modal-body">
+                <p>Built a React Native mobile app which takes into account 
+                distance, current amount of gas, cost, gas station preference, 
+                and car type in order to select the most cost-efficient gas station. Click 
+                <a href="https://www.youtube.com/watch?v=NFDYxfXb_50" target="_blank">here</a> 
+                to see a video demo</p>
+                <h5>React Native, Firebase, Flask, Selenium, AWS EC2</h5>
+            </div>
+            </div>
+        </div>
+
+        <!-- Shopping Center Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>ShoppingCenter@UCSD</h2>
+                <h4>2018</h4>
+            </div>
+            <div class="modal-body">
+                <p>Built an iOS app called ShoppingCenter@UCSD which acts as an online marketplace
+                allowing students to buy and sell each other's items. My role on the team was as a
+                back-end programmer (Swift) and designer (designing the format of the app on XCode).
+                Click <a href="https://github.com/DarMoNic/ShoppingCenter-UCSD" target="_blank">here</a> to go the Github repository</p>
+                <h5>Swift, XCode</h5>
+            </div>
+            </div>
+        </div>
+
+        <!-- H.A.R.D. Hacks Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>H.A.R.D. Hacks (UCSD)</h2>
+                <h4>2018</h4>
+            </div>
+            <div class="modal-body">
+                <p>Programmed a Qualcomm DragonBoard 410c with Arduino, Audio Mezzanine Board and motor.
+                Used the Python Snowboy API for voice recognition, the motor would vibrate when the
+                keyword was heard. Can help the hearing-impaired community. My role on the team was as
+                a lead programmer. </p>
+                <h5>Python, Arduino, Qualcomm Dragonboard</h5>
+                <center>
+                <div>
+                    <img src="assets/img/hardhacks2.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+                    <img src="assets/img/hardhacks3.jpg" alt="2018 H.A.R.D. Hacks (UCSD)" style="width:45%">
+                </div>
+                </center>
+            </div>
+            </div>
+        </div>
+
+        <!-- SPIS Final Project Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>SPIS Final Project (UCSD)</h2>
+                <h4>2017</h4>
+            </div>
+            <div class="modal-body">
+                <p>Student Participant in the 2017 Summer Program for Incoming Students at UCSD</p>
+                <p>Built a “greeter robot” using Python, Raspberry Pi3, servos, ultrasound sensor. Programmed it
+                to recognize reflective tape and autonomously follow it, then relay a previously recorded
+                    message and “wave” using a foam hand connected to a servo.
+                    Click <a href="https://youtu.be/0_QMpUr4y7c" target="_blank">here</a> to see a video demo</p>
+                <h5>Python, Raspberry Pi3, servos, sensors</h5>
+                <center> <img src="assets/img/spis2.JPG" alt="2017 SPIS Final Project (UCSD)" style="width:20%"></center>
+            </div>
+            </div>
+        </div>
+
+        <!-- Girls Who Code Modal -->
+        <div class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="close">&times;</div>
+                <h2>Girls Who Code Final Project</h2>
+                <h4>2015</h4>
+            </div>
+            <div class="modal-body">
+                <p>Created a web app where the player had to drag a
+                piece of trash to the recycle bin or the trash can and receive points for the correct response.
+                Click <a href="https://youtu.be/DipJH5u-8Lw" target="_blank">here</a> to see a video demo</p>
+                <h5>HTML, CSS, Javascript</h5>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="assets/js/modal.js"></script>
+
+    <section id="connect">
     <footer class="footer">
-      <p class="bold">#connect</p>
-      <p>nmartind [at] ucsd [dot] com</p>
-      <p> nicoleamartindale [at] yahoo [dot] com</p>
-      <a href="https://www.linkedin.com/in/nicole-martindale/" target="_blank"><img src="assets/img/linkedin.png" class="contact" alt="Linkedin"></a>
-      <a href="http://www.github.com/nikiollie" target="_blank"><img src="assets/img/github.png" class="github" alt="Github"></a>
-      <a href="mailto:nmartind@ucsd.edu" target="_blank"><img src="assets/img/email.png" class="contact" alt="Email"></a>
-      <a href="https://open.spotify.com/user/nikiollie?si=PyUOEsa9QdWsOMkaATihRg" target="_blank"><img src="assets/img/spotify.png" class="contact" alt="Spotify"</a>
+        <p class="bold">#connect</p>
+        <p>nmartind [at] ucsd [dot] com</p>
+        <p> nicoleamartindale [at] yahoo [dot] com</p>
+        <a href="https://www.linkedin.com/in/nicole-martindale/" target="_blank"><img src="assets/img/linkedin.png" class="contact" alt="Linkedin"></a>
+        <a href="Nicole_Martindale_Resume.pdf" target="_blank"><img src="assets/img/resume.svg" class="resume" alt="Resume"></a>
+        <a href="http://www.github.com/nikiollie" target="_blank"><img src="assets/img/github.png" class="github" alt="Github"></a>
+        <a href="mailto:nmartind@ucsd.edu" target="_blank"><img src="assets/img/email.png" class="contact" alt="Email"></a>
+        <a href="https://open.spotify.com/user/nikiollie?si=PyUOEsa9QdWsOMkaATihRg" target="_blank"><img src="assets/img/spotify.png" class="contact" alt="Spotify"></a>
     </footer>
+    </section>
 
-  </body>
+    </body>
 </html>
