@@ -9,15 +9,15 @@
 
     <nav class="bold nav-bar-section">
         <span class="nav-bar">
-            <a href="index.html" class="current">Home</a>
+            <a href="index.html" type="button" class="current">Home</a>
         </span>
         <span class="nav-bar">
-            <a href="about.html">About</a>
+            <a href="about.html" type="button">About</a>
         </span>
     </nav>
 
     <div class="sections bold">
-        <h4><a href="#internships">Internships</a></h4>
+        <h4><a href="#experience">Experience</a></h4>
         <h4><a href="#research">Research</a></h4>
         <h4><a href="#teaching">Teaching</a></h4>
         <h4><a href="#projects">Projects</a></h4>
@@ -31,27 +31,85 @@
     </div>
     <hr>
     
-    <section id="internships" class="even_section">
+    <section id="experience" class="even_section">
         <center>
-        <p class="section-title">Internships</p>
+        <p class="section-title">Experience</p>
         <div class="bold aligned-row">
                 <figure>
                     <img class="project-image" src="assets/img/twitter.jpg" alt="Twitter" style="width:100%;max-width:300px">
-                    <figcaption>🐦Twitter, Summer 2021</figcaption>
+                    <figcaption>💙Twitter Software Engineer, July 2022 - Nov 2022</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/techwomen.jpg" alt="TechWomen" style="width:100%;max-width:300px">
+                    <figcaption>💻TechWomen Professional Mentor, Sep 2022 - Oct 2022</figcaption>
+                </figure>
+                <figure>
+                    <img class="project-image" src="assets/img/twitter2.jpg" alt="Twitter" style="width:100%;max-width:300px">
+                    <figcaption>🐦Twitter SWE Internship, Summer 2021</figcaption>
                 </figure>
                 <figure>
                     <img class="project-image" src="assets/img/qualcomm1.jpg" alt="Qualcomm" style="width:100%;max-width:300px">
-                    <figcaption>👩‍💻Qualcomm, Summer 2020</figcaption>
+                    <figcaption>👩‍💻Qualcomm SWE Internship, Summer 2020</figcaption>
                 </figure>
                 <figure>
                     <img class="project-image" src="assets/img/qualcomm2.jpg" alt="Qualcomm" style="width:100%;max-width:300px">
-                    <figcaption>🔊Qualcomm, Summer 2019</figcaption>
+                    <figcaption>🔊Qualcomm SWE Internship, Summer 2019</figcaption>
                 </figure>
         </div>
         </center>
     </section>
 
-    
+        <!-- Twitter 2022 Modal -->
+    <div id="twitter22" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Twitter</h2>
+                    <h4>Software Engineer, July 2022 - Nov 2022</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Worked as a Software Engineer on the Ads Measurement Platform team. 
+                        Helped to implement currency conversion for web purchases, which 
+                        involved Thrift schema changes, updates to the existing conversion 
+                        tracking and attribution pipeline, testing, and monitoring.
+                        Improved several APIs used to verify and update Brand Surveys for 
+                        advertisers & partners.
+                        Externalized various tools related to Brand Surveys and A/B testing 
+                        that allowed customers/stakeholders to more easily access and use.
+                        Fully migrated 20+ scalding jobs and workflows from compiling/building 
+                        with Pants to Bazel, which included the creation of a Python script to 
+                        compare configuration files for the jobs (used to help other teams 
+                        migrate their scalding jobs).
+                    </p>
+                    <h5>Scala, Apache Thrift, Hadoop, MySQL, Google BigQuery, IntelliJ</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- TechWomen 2022 Modal -->
+    <div id="techwomen" class="card">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>TechWomen</h2>
+                    <h4>Professional Mentor, Sep 2022 - Oct 2022</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Mentored a woman in STEM from Central Asia who joined my team 
+                        at Twitter for a 5-week U.S. State Department-sponsored program.
+                        Organized and coordinated her technical project, which involved 
+                        developing her goals/vision for the program, establishing project 
+                        checkpoints, and running project update meetings.
+                    </p>
+                    <h5>Product Management, Project Management, Mentoring, Organizational Skills, Communication</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Twitter Modal -->
     <div id="twitter" class="card">
         <div class="modal">
