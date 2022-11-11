@@ -269,7 +269,7 @@ p.lead {
 
 .close {
   margin-right: auto;
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -278,7 +278,7 @@ p.lead {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(68, 185, 185);
     text-decoration: none;
     cursor: pointer;
     margin-left: auto;
